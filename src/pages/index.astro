@@ -1,0 +1,14 @@
+---
+import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import { Counter } from '../components/Counter';
+---
+
+<Layout title="Welcome to Astro.">
+	<Main>
+		<p>Main</p>
+		<Button title="ボタン" />
+		<Counter client:load /> 
+	</Main>
+</Layout>
